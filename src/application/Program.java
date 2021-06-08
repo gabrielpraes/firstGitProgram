@@ -17,10 +17,8 @@ public class Program {
 		System.out.print("Enter the retangle height: ");
 		double height = sc.nextDouble();
 		
-		CalcRetangle calc = new CalcRetangle(width, height);
-		
-		System.out.println("Area: " + calc.area());
-		System.out.println("Diagonal: " + calc.diagonal());
+		System.out.println("Area: " + CalcRetangle.area(width, height));
+		System.out.println("Diagonal: " + CalcRetangle.diagonal(width, height));
 		
 		sc.close();
 

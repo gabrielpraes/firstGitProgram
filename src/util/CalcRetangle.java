@@ -2,33 +2,11 @@ package util;
 
 public class CalcRetangle {
 	
-	private double width;
-	private double height;
-	
-	public CalcRetangle() {
-	}
-	public CalcRetangle(double width, double height) {
-		this.width = width;
-		this.height = height;
-	}
-	public double getWidth() {
-		return width;
-	}
-	public double getHeight() {
-		return height;
-	}
-	public void setWidth(double width) {
-		this.width = width;
-	}
-	public void setHeight(double height) {
-		this.height = height;
-	}
-	
-	public double area() {
+	public static double area(double width, double height) {
 		return width * height;
 	}
 	
-	public double diagonal() {
+	public static double diagonal(double width, double height) {
 		return Math.sqrt(width*width + height*height);
 	}
 	
